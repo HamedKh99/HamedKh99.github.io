@@ -13,6 +13,32 @@ body {
   font-weight: 300;
 }
 
+.header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1rem 0;
+}
+
+.header nav {
+  text-align: center;
+}
+
+.header nav ul {
+  list-style-type: none;
+}
+
+.header nav ul li {
+  display: inline;
+  margin: 1rem;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .introduction {
   background-image: url("/assets/images/background.jpg");
   background-size: cover;
@@ -42,7 +68,7 @@ body {
 }
 
 .introduction .personal-info {
-  width: 60%;
+  width: 90%;
   text-align: center;
 }
 
@@ -60,7 +86,7 @@ body {
   color: rgba(255, 255, 255);
 }
 
-.about-me {
+.about-me, .projects {
   background-color: #1e1e1e;
   height: 100vh;
   padding-top: 8rem;
@@ -141,3 +167,63 @@ body {
   margin-right: 1rem;
 }
 
+.career, .education {
+  padding: 8rem 0 2rem;
+}
+
+.section-title {
+  display: flex;
+  justify-content: center;
+}
+
+.section-title h3 {
+  letter-spacing: 0.4rem;
+  font-weight: 400;
+  border-bottom: 0.15rem solid hsla(24, 100%, 47%, 1);
+  width: fit-content;
+  height: fit-content;
+  padding-bottom: 0.2rem;
+}
+
+.position-detail {
+  margin-bottom: 2rem;
+}
+
+.positions-container h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.positions-container .position-title {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.positions-container .position-title::after {
+  content: "\2022";
+  margin: 0 1rem;
+}
+
+.positions-container .position-duration {
+  letter-spacing: 0.1rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.position-desc {
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.divider {
+  width: 80%;
+  margin: 0 auto;
+  height: 0;
+  border: 0.01rem  solid rgba(0, 0, 0, 0.2);
+}
+
+.education {
+  padding-top: 4rem;
+}
